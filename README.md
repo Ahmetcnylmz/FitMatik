@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>Daha iyisi, her gün.</strong>
+  <strong>Her gün, daha iyisi.</strong>
 </p>
 
 <p align="center">
