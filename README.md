@@ -18,7 +18,7 @@
 
 | Ana Sayfa | Günlük Kalori |
 | --------- | ------------- |
-| <img src="screenshots/anasayfa.png" width="400"> | <img src="screenshots/gunluk-kalor.png" width="400"> |
+| <img src="screenshots/anasayfa.png" width="400"> | <img src="screenshots/gunluk-kalori.png" width="400"> |
 
 | Besin Kalorisi | Vücut Kitle İndeksi |
 | -------------- | ------------------- |
@@ -134,7 +134,7 @@ Hesaplama sonuçları kişiden kişiye değişiklik gösterebilir. Uygulamadaki 
 
 | Homepage | Daily Calories |
 | -------- | -------------- |
-| <img src="screenshots/anasayfa.png" width="400"> | <img src="screenshots/gunluk-kalor.png" width="400"> |
+| <img src="screenshots/anasayfa.png" width="400"> | <img src="screenshots/gunluk-kalori.png" width="400"> |
 
 | Food Calories | Body Mass Index |
 | ------------- | --------------- |
