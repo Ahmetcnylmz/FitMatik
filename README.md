@@ -1,4 +1,4 @@
-# FitMatik
+<h1 align="center"> FitMatik </h1>
 
 <p align="center">
   <img src="logo.png" alt="FitMatik Logo" width="180">
