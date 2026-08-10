@@ -1,11 +1,11 @@
-# FitMatik
+<h1 align="center"> FitMatik </h1>
 
 <p align="center">
   <img src="logo.png" alt="FitMatik Logo" width="180">
 </p>
 
 <p align="center">
-  <strong>Daha iyisi, her gün.</strong>
+  <strong>Her gün, daha iyisi.</strong>
 </p>
 
 <p align="center">
@@ -35,7 +35,7 @@
 * **İdeal Kilo:** Kullanıcı bilgilerine göre ideal kilo değerini hesaplama
 * **Günlük Su İhtiyacı:** Kilo ve aktivite seviyesine göre günlük su ihtiyacını hesaplama
 * **Maksimum Kalp Hızı:** Yaşa göre maksimum kalp hızını ve antrenman bölgelerini hesaplama
-* **Besin Kalorisi:** 3.005 farklı besin içeren veritabanında besinler arasında arama yapabilme ve besin miktarına göre kalori, protein, karbonhidrat, yağ ve lif değerlerini görüntüleme
+* **Besin Kalorisi:** Besinler arasında arama yapabilme ve besin miktarına göre kalori, protein, karbonhidrat, yağ ve lif değerlerini görüntüleme
 
 ## Kullanıcı Deneyimi
 
@@ -51,7 +51,7 @@
 
 ## Kullanılan Teknolojiler
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white), ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white), ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
 ---
 
@@ -152,8 +152,7 @@ Hesaplama sonuçları kişiden kişiye değişiklik gösterebilir. Uygulamadaki 
 * **Ideal Weight:** Calculate ideal weight based on user information
 * **Daily Water Intake:** Calculate daily water requirements based on weight and activity level
 * **Maximum Heart Rate:** Calculate maximum heart rate and training zones based on age
-* **Food Calories:** Search through a database containing 3,005 different foods and view calorie, protein, carbohydrate, fat, and fiber values based on food quantity
-
+* **Food Calories:** Ability to search for foods and view calorie, protein, carbohydrate, fat, and fiber values ​​based on food quantity.
 ## User Experience
 
 * Fully responsive design
