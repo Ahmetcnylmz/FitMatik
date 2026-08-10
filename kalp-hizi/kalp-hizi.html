@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitmatik — Maksimum Kalp Hızı</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="kalp-hizi.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-alan">
+      <img src="../logo.png" class="logo-sol" alt="Fitmatik Logo">
+      <span class="logo-yazi">FIT<span class="yesil">MATIK</span></span>
+    </div>
+    <ul class="menu">
+      <li><a href="../index.html"><i class="fa-solid fa-house"></i>Ana Sayfa</a></li>
+      <li><a href="../gunlukkalori/gunlukkalori.html"><i class="fa-solid fa-fire"></i>Günlük Kalori</a></li>
+      <li><a href="../vki/vki.html"><i class="fa-solid fa-weight-scale"></i>Vücut Kitle (VKİ)</a></li>
+      <li><a href="../bmh/bmh.html"><i class="fa-solid fa-gauge-high"></i>Bazal Metabolizma</a></li>
+      <li><a href="../yag-orani/yag-orani.html"><i class="fa-solid fa-percent"></i>Vücut Yağ Oranı</a></li>
+      <li><a href="../yagsiz-kutle/yagsiz-kutle.html"><i class="fa-solid fa-dumbbell"></i>Yağsız Vücut Kütlesi</a></li>
+      <li><a href="../ideal-kilo/ideal-kilo.html"><i class="fa-solid fa-bullseye"></i>İdeal Kilo</a></li>
+      <li><a href="../su-ihtiyaci/su-ihtiyaci.html"><i class="fa-solid fa-droplet"></i>Günlük Su İhtiyacı</a></li>
+      <li><a href="#" class="aktif"><i class="fa-solid fa-heart-pulse"></i>Maksimum Kalp Hızı</a></li>
+      <li><a href="../besin-kalorisi/besin-kalorisi.html"><i class="fa-solid fa-apple-whole"></i>Besin Kalorisi</a></li>
+    </ul>
+  </div>
+  <main class="ana-icerik">
+    <header class="sayfa-basligi">
+      <h1 class="baslik">Maksimum Kalp Hızı</h1>
+      <p class="aciklama">Yaşınıza göre maksimum kalp hızınızı ve antrenman hedef bölgelerinizi hesaplayın.</p>
+    </header>
+    <section class="hesaplama-kutusu">
+      <form id="kalpFormu">
+        <div class="form-satiri">
+          <div class="form-grubu">
+            <label for="yas">Yaş</label>
+            <input type="number" id="yas" placeholder="Örn: 22" min="10" max="100" required>
+          </div>
+          <div class="form-grubu">
+            <label for="dinlenme">Dinlenme Nabzı (opsiyonel)</label>
+            <input type="number" id="dinlenme" placeholder="Örn: 65" min="30" max="120">
+          </div>
+        </div>
+        <button type="submit" class="hesapla-butonu">Kalp Hızını Hesapla</button>
+      </form>
+      <div id="sonuclar" class="sonuc-alani gizli"></div>
+    </section>
+
+    <section class="bilgi-kutusu">
+      <h2><i class="fa-solid fa-circle-info"></i>Maksimum kalp hızı ve antrenman bölgeleri nedir?</h2>
+      <p>Maksimum kalp hızı (MHR), kalbinin dakikada atabileceği en yüksek atım sayısıdır ve yaş ilerledikçe azalır. Antrenmanlarını bu değerin belirli yüzdelerine göre planlamak, hangi şiddette çalıştığını (yağ yakımı, kardiyo, dayanıklılık) net şekilde görmeni sağlar.</p>
+      <p>Dinlenme nabzını da girersen, hesaplama Karvonen (rezerv kalp hızı) yöntemine geçer ve bölgeler kondisyon seviyene göre daha kişiselleşir. Genel kural: düşük bölgelerde uzun süre, yüksek bölgelerde kısa süre çalışılır.</p>
+    </section>
+
+  </main>
+  <script src="kalp-hizi.js"></script>
+</body>
+</html>

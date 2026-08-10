@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitmatik — Yağsız Vücut Kütlesi</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="yagsiz-kutle.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-alan">
+      <img src="../logo.png" class="logo-sol" alt="Fitmatik Logo">
+      <span class="logo-yazi">FIT<span class="yesil">MATIK</span></span>
+    </div>
+    <ul class="menu">
+      <li><a href="../index.html"><i class="fa-solid fa-house"></i>Ana Sayfa</a></li>
+      <li><a href="../gunlukkalori/gunlukkalori.html"><i class="fa-solid fa-fire"></i>Günlük Kalori</a></li>
+      <li><a href="../vki/vki.html"><i class="fa-solid fa-weight-scale"></i>Vücut Kitle (VKİ)</a></li>
+      <li><a href="../bmh/bmh.html"><i class="fa-solid fa-gauge-high"></i>Bazal Metabolizma</a></li>
+      <li><a href="../yag-orani/yag-orani.html"><i class="fa-solid fa-percent"></i>Vücut Yağ Oranı</a></li>
+      <li><a href="#" class="aktif"><i class="fa-solid fa-dumbbell"></i>Yağsız Vücut Kütlesi</a></li>
+      <li><a href="../ideal-kilo/ideal-kilo.html"><i class="fa-solid fa-bullseye"></i>İdeal Kilo</a></li>
+      <li><a href="../su-ihtiyaci/su-ihtiyaci.html"><i class="fa-solid fa-droplet"></i>Günlük Su İhtiyacı</a></li>
+      <li><a href="../kalp-hizi/kalp-hizi.html"><i class="fa-solid fa-heart-pulse"></i>Maksimum Kalp Hızı</a></li>
+      <li><a href="../besin-kalorisi/besin-kalorisi.html"><i class="fa-solid fa-apple-whole"></i>Besin Kalorisi</a></li>
+    </ul>
+  </div>
+  <main class="ana-icerik">
+    <header class="sayfa-basligi">
+      <h1 class="baslik">Yağsız Vücut Kütlesi (YVK)</h1>
+      <p class="aciklama">Vücudunuzdaki yağ dışı kütleyi (kas, kemik, su, organ) Boer formülüyle hesaplayın.</p>
+    </header>
+    <section class="hesaplama-kutusu">
+      <form id="yvkFormu">
+        <div class="form-grubu">
+          <label>Cinsiyet</label>
+          <div class="cinsiyet-secimi">
+            <label><input type="radio" name="cinsiyet" value="erkek" checked> Erkek</label>
+            <label><input type="radio" name="cinsiyet" value="kadin"> Kadın</label>
+          </div>
+        </div>
+        <div class="form-satiri">
+          <div class="form-grubu">
+            <label for="boy">Boy (cm)</label>
+            <input type="number" id="boy" placeholder="Örn: 178" min="50" max="250" required>
+          </div>
+          <div class="form-grubu">
+            <label for="kilo">Kilo (kg)</label>
+            <input type="number" id="kilo" placeholder="Örn: 75" min="20" max="300" step="0.1" required>
+          </div>
+        </div>
+        <button type="submit" class="hesapla-butonu">YVK Hesapla</button>
+      </form>
+      <div id="sonuclar" class="sonuc-alani gizli"></div>
+    </section>
+
+    <section class="bilgi-kutusu">
+      <h2><i class="fa-solid fa-circle-info"></i>Yağsız Vücut Kütlesi (YVK) nedir?</h2>
+      <p>Yağsız vücut kütlesi, toplam vücut ağırlığından yağ kütlesi çıkarıldığında kalan kısımdır — kasların, kemiklerin, organların ve vücuttaki suyun toplam ağırlığı. Kısaca "yağ dışında ne varsa" o kısmı temsil eder.</p>
+      <p>Sporcular ve düzenli antrenman yapanlar için YVK, kas gelişimini takip etmenin iyi bir yoludur: kilo değişmese bile YVK artıyorsa, yağ kaybederken kas kazanıyor olabilirsin. Bu hesaplama Boer formülüyle boy ve kilona göre tahmini bir değer verir.</p>
+    </section>
+
+  </main>
+  <script src="yagsiz-kutle.js"></script>
+</body>
+</html>

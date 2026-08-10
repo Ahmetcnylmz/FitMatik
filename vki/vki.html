@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitmatik — Vücut Kitle İndeksi (VKİ)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="vki.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-alan">
+      <img src="../logo.png" class="logo-sol" alt="Fitmatik Logo">
+      <span class="logo-yazi">FIT<span class="yesil">MATIK</span></span>
+    </div>
+    <ul class="menu">
+      <li><a href="../index.html"><i class="fa-solid fa-house"></i>Ana Sayfa</a></li>
+      <li><a href="../gunlukkalori/gunlukkalori.html"><i class="fa-solid fa-fire"></i>Günlük Kalori</a></li>
+      <li><a href="#" class="aktif"><i class="fa-solid fa-weight-scale"></i>Vücut Kitle (VKİ)</a></li>
+      <li><a href="../bmh/bmh.html"><i class="fa-solid fa-gauge-high"></i>Bazal Metabolizma</a></li>
+      <li><a href="../yag-orani/yag-orani.html"><i class="fa-solid fa-percent"></i>Vücut Yağ Oranı</a></li>
+      <li><a href="../yagsiz-kutle/yagsiz-kutle.html"><i class="fa-solid fa-dumbbell"></i>Yağsız Vücut Kütlesi</a></li>
+      <li><a href="../ideal-kilo/ideal-kilo.html"><i class="fa-solid fa-bullseye"></i>İdeal Kilo</a></li>
+      <li><a href="../su-ihtiyaci/su-ihtiyaci.html"><i class="fa-solid fa-droplet"></i>Günlük Su İhtiyacı</a></li>
+      <li><a href="../kalp-hizi/kalp-hizi.html"><i class="fa-solid fa-heart-pulse"></i>Maksimum Kalp Hızı</a></li>
+      <li><a href="../besin-kalorisi/besin-kalorisi.html"><i class="fa-solid fa-apple-whole"></i>Besin Kalorisi</a></li>
+    </ul>
+  </div>
+  <main class="ana-icerik">
+    <header class="sayfa-basligi">
+      <h1 class="baslik">Vücut Kitle İndeksi (VKİ)</h1>
+      <p class="aciklama">Boy ve kilo değerlerinize göre vücut kitle indeksinizi hesaplayın ve Dünya Sağlık Örgütü (DSÖ) standartlarına göre durumunuzu öğrenin.</p>
+    </header>
+    <section class="hesaplama-kutusu">
+      <form id="vkiFormu">
+        <div class="form-satiri">
+          <div class="form-grubu">
+            <label for="boy">Boy (cm)</label>
+            <input type="number" id="boy" placeholder="Örn: 178" min="50" max="250" required>
+          </div>
+          <div class="form-grubu">
+            <label for="kilo">Kilo (kg)</label>
+            <input type="number" id="kilo" placeholder="Örn: 75" min="20" max="300" step="0.1" required>
+          </div>
+        </div>
+        <button type="submit" class="hesapla-butonu">VKİ Hesapla</button>
+      </form>
+      <div id="sonuclar" class="sonuc-alani gizli"></div>
+    </section>
+
+    <section class="bilgi-kutusu">
+      <h2><i class="fa-solid fa-circle-info"></i>Vücut Kitle İndeksi (VKİ) nedir?</h2>
+      <p>VKİ, kilonun boya göre ne kadar uygun olduğunu gösteren basit bir tarama değeridir. Kilonun (kg), boyunun metre cinsinden karesine bölünmesiyle hesaplanır ve seni "zayıf", "normal", "fazla kilolu" veya "obez" gibi geniş kategorilere yerleştirir.</p>
+      <p>VKİ pratik ve hızlı bir gösterge olsa da kas kütlesini dikkate almaz — sporcularda veya kaslı kişilerde gerçek durumu yansıtmayabilir. Daha net bir tablo için VKİ'yi vücut yağ oranı ve yağsız vücut kütlesi hesaplamalarıyla birlikte değerlendirmen önerilir.</p>
+    </section>
+
+  </main>
+  <script src="vki.js"></script>
+</body>
+</html>

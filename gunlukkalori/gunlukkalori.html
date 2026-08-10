@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitmatik — Daha iyisi, her gün.</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="gunlukkalori.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-alan">
+      <img src="../logo.png" class="logo-sol">
+      <span class="logo-yazi">FIT<span class="yesil">MATIK</span></span>
+    </div>
+    <ul class="menu">
+      <li><a href="../index.html"><i class="fa-solid fa-house"></i>Ana Sayfa</a></li>
+      <li><a href="#" class="aktif"><i class="fa-solid fa-fire"></i>Günlük Kalori</a></li>
+      <li><a href="../vki/vki.html"><i class="fa-solid fa-weight-scale"></i>Vücut Kitle (VKİ)</a></li>
+      <li><a href="../bmh/bmh.html"><i class="fa-solid fa-gauge-high"></i>Bazal Metabolizma</a></li>
+      <li><a href="../yag-orani/yag-orani.html"><i class="fa-solid fa-percent"></i>Vücut Yağ Oranı</a></li>
+      <li><a href="../yagsiz-kutle/yagsiz-kutle.html"><i class="fa-solid fa-dumbbell"></i>Yağsız Vücut Kütlesi</a></li>
+      <li><a href="../ideal-kilo/ideal-kilo.html"><i class="fa-solid fa-bullseye"></i>İdeal Kilo</a></li>
+      <li><a href="../su-ihtiyaci/su-ihtiyaci.html"><i class="fa-solid fa-droplet"></i>Günlük Su İhtiyacı</a></li>
+      <li><a href="../kalp-hizi/kalp-hizi.html"><i class="fa-solid fa-heart-pulse"></i>Maksimum Kalp Hızı</a></li>
+      <li><a href="../besin-kalorisi/besin-kalorisi.html"><i class="fa-solid fa-apple-whole"></i>Besin Kalorisi</a></li>
+    </ul>
+  </div>
+  <main class="ana-icerik">
+    <header class="sayfa-basligi">
+      <h1 class="baslik">Günlük Kalori Hesaplama</h1>
+      <p class="aciklama">Bazal metabolizma hızınızı ve hedefinize göre almanız gereken günlük kalori miktarını hesaplayın.</p>
+    </header>
+    <section class="hesaplama-kutusu">
+      <form id="kaloriFormu">
+        <div class="form-grubu">
+          <label>Cinsiyet</label>
+          <div class="cinsiyet-secimi">
+            <label><input type="radio" name="cinsiyet" value="erkek" checked> Erkek</label>
+            <label><input type="radio" name="cinsiyet" value="kadin"> Kadın</label>
+          </div>
+        </div>
+        <div class="form-satiri">
+          <div class="form-grubu">
+            <label for="yas">Yaş</label>
+            <input type="number" id="yas" placeholder="Örn: 22" min="10" max="120" required>
+          </div>
+          <div class="form-grubu">
+            <label for="boy">Boy (cm)</label>
+            <input type="number" id="boy" placeholder="Örn: 178" min="50" max="250" required>
+          </div>
+          <div class="form-grubu">
+            <label for="kilo">Kilo (kg)</label>
+            <input type="number" id="kilo" placeholder="Örn: 75" min="20" max="300" step="0.1" required>
+          </div>
+        </div>
+        <div class="form-grubu">
+            <label for="aktivite">Günlük Egzersiz / Aktivite Seviyesi</label>
+            <select id="aktivite" required>
+                <option value="1.2" selected>Masa Başı / Hareketsiz (Gün içi az yürüyüş)</option>
+                <option value="1.3">Hafif Aktif (Haftada 1-3 gün hafif egzersiz)</option>
+                <option value="1.425">Orta Aktif (Haftada 3-5 gün düzenli antrenman)</option>
+                <option value="1.55">Yüksek Aktif (Haftada 6-7 gün ağır spor / ayakta iş)</option>
+                <option value="1.75">Aşırı Aktif (Profesyonel sporcu / beden işçisi)</option>
+            </select>
+        </div>
+        <button type="submit" class="hesapla-butonu">Kalori İhtiyacını Hesapla</button>
+      </form>
+      <div id="sonuclar" class="sonuc-alani gizli"></div>
+    </section>
+
+    <section class="bilgi-kutusu">
+      <h2><i class="fa-solid fa-circle-info"></i>Günlük kalori ihtiyacı nedir?</h2>
+      <p>Günlük kalori ihtiyacı, vücudunun mevcut kilonu koruyabilmek için 24 saatte harcaması gereken toplam enerji miktarıdır. Bu miktar; bazal metabolizma hızın (BMH), yaşın, cinsiyetin, boyun, kilon ve gün içindeki hareketliliğine göre değişir.</p>
+      <p>Bu sayı senin için bir başlangıç noktasıdır: kilo vermek istiyorsan bu değerin altında, kilo almak istiyorsan üstünde beslenmen gerekir. Formda seçtiğin aktivite seviyesi, günlük harcadığın toplam enerjiyi (bazal metabolizma + hareket) yansıtacak şekilde hesaba katılır.</p>
+    </section>
+
+  </main>
+  <script src="gunlukkalori.js"></script>
+</body>
+</html>

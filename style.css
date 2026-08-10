@@ -1,0 +1,341 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: #faf9f5;
+  color: #1b1f16;
+  display: flex;
+}
+.yesil{
+  color: #57991f;
+}
+.sidebar{
+  width: 300px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  border-right: 1px solid #e4e7dc;
+  padding: 26px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+.logo-alan{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 26px 22px 26px;
+  border-bottom: 1px solid #e4e7dc;
+  margin-bottom: 16px;
+}
+.logo-sol{
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.logo-yazi{
+  font-size: 21px;
+  font-weight: 700;
+}
+.menu{
+  flex: 1;
+}
+.menu li{
+  list-style: none;
+}
+.menu a{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 13px 26px;
+  color: #6b7166;
+  text-decoration: none;
+  font-size: 14.5px;
+  font-weight: 500;
+  border-left: 3px solid transparent;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.menu a i{
+  width: 18px;
+  flex-shrink: 0;
+  text-align: center;
+  color: #4f8a1e;
+  font-size: 15px;
+}
+.menu a:hover{
+  background-color: #f2f6ea;
+  color: #1b1f16;
+}
+.menu a.aktif{
+  border-left-color: #4f8a1e;
+  color: #1b1f16;
+  font-weight: 700;
+  background-color: #eef6df;
+}
+.icerik{
+  margin-left: 300px;
+  flex: 1;
+  min-width: 0;
+}
+.hero{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 40px 24px;
+  background:
+    radial-gradient(700px 420px at 88% 12%, rgba(143, 212, 76, 0.16), transparent 60%),
+    radial-gradient(600px 360px at 8% 92%, rgba(143, 212, 76, 0.11), transparent 60%);
+}
+.hero-ic{
+  opacity: 0;
+  transform: translateY(18px);
+  animation: heroGir 0.9s ease forwards 0.15s;
+  max-width: 480px;
+}
+@keyframes heroGir{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.logo-orta{
+  width: 88px;
+  height: 88px;
+  margin-bottom: 18px;
+}
+.hero-baslik{
+  font-size: clamp(42px, 8vw, 78px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.slogan{
+  margin-top: 16px;
+  color: #6b7166;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding: 0 24px;
+}
+.slogan::before,
+.slogan::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 1px;
+  background-color: #4f8a1e;
+}
+.slogan::before{
+  left: -6px;
+}
+.slogan::after{
+  right: -6px;
+}
+.hero-aciklama{
+  margin-top: 22px;
+  color: #6b7166;
+  font-size: 15px;
+}
+.asagi-ok{
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e4e7dc;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: zipla 1.8s ease-in-out infinite;
+}
+.asagi-ok i{
+  color: #4f8a1e;
+  font-size: 13px;
+}
+@keyframes zipla{
+  0%, 100%{
+    transform: translateX(-50%) translateY(0);
+  }
+  50%{
+    transform: translateX(-50%) translateY(6px);
+  }
+}
+.araclar{
+  padding: 90px 50px 100px;
+}
+.baslik-alan{
+  max-width: 950px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+.etiket{
+  font-size: 12px;
+  font-weight: 700;
+  color: #4f8a1e;
+  letter-spacing: 2px;
+}
+.baslik-alan h2{
+  font-size: 32px;
+  margin-top: 8px;
+}
+.baslik-alan p{
+  margin-top: 10px;
+  color: #6b7166;
+  font-size: 14.5px;
+}
+.grid{
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.kart{
+  background-color: #ffffff;
+  border: 1px solid #e4e7dc;
+  border-radius: 12px;
+  padding: 24px 22px;
+  text-decoration: none;
+  color: #1b1f16;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, opacity 0.5s ease;
+}
+.kart.goster{
+  opacity: 1;
+  transform: translateY(0);
+}
+.kart:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 14px 26px -14px rgba(30, 40, 20, 0.2);
+  border-color: #b9dd8c;
+}
+.kart-ikon{
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: #eef6df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kart-ikon i{
+  color: #4f8a1e;
+  font-size: 18px;
+}
+.kart h3{
+  font-size: 16.5px;
+}
+.kart p{
+  font-size: 13px;
+  color: #6b7166;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+.kart-link{
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #4f8a1e;
+}
+.kart-link i{
+  margin-left: 3px;
+  font-size: 11px;
+}
+@media (max-width: 1000px){
+  .sidebar{
+    width: 240px;
+  }
+  .icerik{
+    margin-left: 240px;
+  }
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 760px){
+  body{
+    flex-direction: column;
+  }
+  .sidebar{
+    position: static;
+    width: 100%;
+    min-height: auto;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    padding: 12px 0;
+  }
+  .logo-alan{
+    border-bottom: none;
+    margin: 0;
+    padding: 0 16px;
+    flex-shrink: 0;
+  }
+  .menu{
+    display: flex;
+  }
+  .menu a{
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    padding: 8px 14px;
+    font-size: 13px;
+    gap: 8px;
+  }
+  .menu a i{
+    font-size: 13px;
+  }
+  .menu a.aktif{
+    border-bottom-color: #4f8a1e;
+  }
+  .icerik{
+    margin-left: 0;
+  }
+  .hero{
+    min-height: calc(100vh - 60px);
+    padding: 32px 20px;
+  }
+  .hero-aciklama{
+    font-size: 14px;
+  }
+  .araclar{
+    padding: 60px 20px 70px;
+  }
+  .baslik-alan h2{
+    font-size: 26px;
+  }
+  .grid{
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce){
+  .hero-ic,
+  .asagi-ok,
+  .kart{
+    animation: none;
+    transition: none;
+  }
+}
